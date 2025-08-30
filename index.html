@@ -3,93 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pooja Samaan - Beta</title>
+  <title>Pooja Kits Store</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #fdf6e3;
+      background: #f9f9f9;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
     header {
-      background: #f39c12;
+      background: #ff9933;
       color: white;
-      text-align: center;
       padding: 20px;
     }
-    h1 { margin: 0; }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    h1 {
+      margin: 0;
+    }
+    .kits {
+      display: flex;
+      justify-content: center;
       gap: 20px;
-      padding: 20px;
+      margin: 40px;
+      flex-wrap: wrap;
     }
-    .product {
+    .kit-card {
       background: white;
-      padding: 15px;
       border-radius: 10px;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-      text-align: center;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
-    .product h3 {
-      margin: 10px 0;
+    .kit-card:hover {
+      transform: scale(1.05);
     }
-    .order-btn {
-      background: #27ae60;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
+    .kit-card img {
+      width: 100%;
+      border-radius: 10px;
     }
-    .order-btn:hover {
-      background: #219150;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
+    .kit-card a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Pooja Samaan</h1>
-    <p>Your Temple Essentials, Ready at the Stall</p>
+    <h1>Welcome to Pooja Kits Store</h1>
+    <p>Pick your kit & collect it at the temple stall</p>
   </header>
 
-  <section class="products">
-    <div class="product">
-      <h3>Flowers</h3>
-      <p>₹50 per packet</p>
-      <button class="order-btn">Order</button>
+  <div class="kits">
+    <div class="kit-card">
+      <img src="https://via.placeholder.com/200x150.png?text=Flowers+Kit" alt="Flowers Kit">
+      <a href="flowers.html">Flowers Kit</a>
     </div>
-    <div class="product">
-      <h3>Coconut</h3>
-      <p>₹30 each</p>
-      <button class="order-btn">Order</button>
+    <div class="kit-card">
+      <img src="https://via.placeholder.com/200x150.png?text=Coconut+Kit" alt="Coconut Kit">
+      <a href="coconut.html">Coconut Kit</a>
     </div>
-    <div class="product">
-      <h3>Incense Sticks</h3>
-      <p>₹40 per pack</p>
-      <button class="order-btn">Order</button>
+    <div class="kit-card">
+      <img src="https://via.placeholder.com/200x150.png?text=Incense+Kit" alt="Incense Kit">
+      <a href="incense.html">Incense Kit</a>
     </div>
-    <div class="product">
-      <h3>Camphor</h3>
-      <p>₹25 per pack</p>
-      <button class="order-btn">Order</button>
-    </div>
-    <div class="product">
-      <h3>Pooja Thali</h3>
-      <p>₹150 each</p>
-      <button class="order-btn">Order</button>
-    </div>
-  </section>
-
-  <footer>
-    <p>Beta Version | Pickup at Temple Stall</p>
-  </footer>
+  </div>
 </body>
 </html>
+
